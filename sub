@@ -1,0 +1,13 @@
+#Riley McKenzie
+#10/7/23
+
+.data
+str3: .asciiz "This is sub func!\n"
+.text
+.globl subfunc
+
+subfunc:
+li $v0, 4
+la $a0, str3
+syscall
+jr $ra
